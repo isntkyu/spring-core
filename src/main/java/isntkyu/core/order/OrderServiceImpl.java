@@ -1,4 +1,4 @@
-package isntkyu.core.Order;
+package isntkyu.core.order;
 
 import isntkyu.core.discount.DiscountPolicy;
 import isntkyu.core.discount.FixDiscountPolicy;

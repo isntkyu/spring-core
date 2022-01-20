@@ -1,4 +1,4 @@
-package isntkyu.core.Order;
+package isntkyu.core.order;
 
 public class Order {
 

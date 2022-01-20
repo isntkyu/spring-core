@@ -1,4 +1,4 @@
-package isntkyu.core.Order;
+package isntkyu.core.order;
 
 import isntkyu.core.member.Grade;
 import isntkyu.core.member.Member;
