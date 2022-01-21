@@ -1,16 +1,25 @@
 package isntkyu.core.order;
 
+import isntkyu.core.AppConfig;
 import isntkyu.core.member.Grade;
 import isntkyu.core.member.Member;
 import isntkyu.core.member.MemberService;
 import isntkyu.core.member.MemberServiceImpl;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
 
-    MemberService memberService = new MemberServiceImpl();
-    OrderService orderService = new OrderServiceImpl();
+    MemberService memberService;
+    OrderService orderService;
+
+    @BeforeEach
+    public void beforeEach () {
+        AppConfig appConfig = new AppConfig();
+        memberService = appConfig.memberService();
+        orderService = appConfig.orderService();
+    }
 
     @Test
     void createOrder() {
