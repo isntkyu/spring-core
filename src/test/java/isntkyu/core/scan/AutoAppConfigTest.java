@@ -1,11 +1,12 @@
-package isntkyu.core;
+package isntkyu.core.scan;
 
+import isntkyu.core.AutoAppConfig;
 import isntkyu.core.member.MemberService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class scan {
+public class AutoAppConfigTest {
 
     @Test
     void basicScan() {
