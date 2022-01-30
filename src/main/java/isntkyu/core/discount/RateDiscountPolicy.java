@@ -1,10 +1,12 @@
 package isntkyu.core.discount;
 
+import isntkyu.core.annotation.MainDiscountPolicy;
 import isntkyu.core.member.Grade;
 import isntkyu.core.member.Member;
 import org.springframework.stereotype.Component;
 
 @Component
+@MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
